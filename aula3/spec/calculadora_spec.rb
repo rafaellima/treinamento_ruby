@@ -15,7 +15,7 @@ RSpec.describe Calculadora do
       expect(subject.subtrai 10,8).to eql 2
     end 
     it "raises" do
-      expect{subject.divide 3,0}.to raise_error
+      expect{subject.divide 3,0}.to raise_error(ZeroDivisionError)
     end
   end  
 end
